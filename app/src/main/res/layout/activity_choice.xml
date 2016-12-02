@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_choice"
     android:layout_width="match_parent"
@@ -11,11 +12,103 @@
     tools:context="com.cityunlocked.david.cityunlocked.ChoiceActivity">
 
     <GridView
-        android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/gridview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_width="100sp" />
+
+    <TextView
+        android:text="Sport / Adventure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/gridview"
+        android:layout_toEndOf="@+id/gridview"
+        android:layout_marginTop="42dp"
+        android:id="@+id/textView2"
+        android:paddingBottom="65dp" />
+
+    <TextView
+        android:text="Culture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:paddingBottom="65dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <TextView
+        android:text="Food / Drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView4"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:paddingBottom="65dp" />
+
+    <TextView
+        android:text="Time to make one of life's hard choices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:id="@+id/textView"
+        android:fontFamily="monospace"
+        android:textStyle="normal|bold"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Surprise me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:paddingBottom="65dp"
+        android:layout_toRightOf="@+id/gridview"
+        android:layout_toEndOf="@+id/gridview"
+        android:layout_below="@+id/textView6" />
+
+    <ImageView
+        app:srcCompat="@drawable/home"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="199dp"
-        android:id="@+id/gridview" />
+        android:id="@+id/imageView2"
+        android:layout_height="50dp"
+        android:layout_width="80dp" />
+
+    <ImageView
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/unlocks"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:id="@+id/imageView3"
+        android:layout_width="120dp" />
+
+    <ImageView
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/reviews"
+        android:id="@+id/imageView4"
+        android:layout_width="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3" />
+
+    <ImageView
+        app:srcCompat="@drawable/setting"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="67dp"
+        android:layout_height="50dp"
+        android:layout_width="100dp" />
+
 </RelativeLayout>

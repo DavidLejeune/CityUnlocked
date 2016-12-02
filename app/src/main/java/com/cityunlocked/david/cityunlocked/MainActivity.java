@@ -1,6 +1,7 @@
 package com.cityunlocked.david.cityunlocked;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getWindow().getDecorView().setBackgroundColor(Color.rgb(255,165,0));
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -20,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
                 MainActivity.this.startActivity(loginIntent);
                 MainActivity.this.finish();
             }
-        }, 3333);
+        }, 6666);
 
 
     }

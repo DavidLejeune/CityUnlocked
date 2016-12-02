@@ -36,7 +36,7 @@ public class ImageAdapter extends BaseAdapter {
         if (convertView == null) {
             // if it's not recycled, initialize some attributes
             imageView = new ImageView(mContext);
-            imageView.setLayoutParams(new GridView.LayoutParams(140, 200));
+            imageView.setLayoutParams(new GridView.LayoutParams(180, 180));
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
             imageView.setPadding(8, 8, 8, 8);
         } else {
@@ -49,8 +49,8 @@ public class ImageAdapter extends BaseAdapter {
 
     // references to our images
     private Integer[] mThumbIds = {
-            //R.drawable.inbraak, R.drawable.branddetectie,
-            //R.drawable.gasdetectie, R.drawable.camera,
+            R.drawable.adventure, R.drawable.culture,
+            R.drawable.leisure, R.drawable.surprise
             //R.drawable.toegang, R.drawable.geintegreerd
             //test to see if extra sections still shows = yes with gridview scrollable
             //,

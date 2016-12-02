@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">CityUnlocked</string>
     <string name="title_activity_review">ReviewActivity</string>
+
+    <string-array name="brew_array">
+        <item>Food</item>
+        <item>Drink</item>
+    </string-array>
+
+
 </resources>
