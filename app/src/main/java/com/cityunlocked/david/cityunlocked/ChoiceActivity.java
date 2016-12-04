@@ -18,8 +18,26 @@ public class ChoiceActivity extends AppCompatActivity {
 
         getWindow().getDecorView().setBackgroundColor(Color.rgb(255,255,255));
 
+
+        final View imageButton11 = findViewById(R.id.unlocks);
+        imageButton11.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                // do whatever we wish!
+                final Intent unlockIntent = new Intent(ChoiceActivity.this, UnlockActivity.class);
+                ChoiceActivity.this.startActivity(unlockIntent);
+                //ChoiceActivity.this.finish();
+            }
+        });
+
+
+
         GridView gridview = (GridView) findViewById(R.id.gridview);
         gridview.setAdapter(new ImageAdapter(this));
+
+
+
+
 
         gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v,
@@ -28,7 +46,7 @@ public class ChoiceActivity extends AppCompatActivity {
 
 
                 switch(position) {
-                    case 2:
+                    case 3:
                         final Intent mapIntent = new Intent(ChoiceActivity.this, MapActivity.class);
                         ChoiceActivity.this.startActivity(mapIntent);
                         //ChoiceActivity.this.finish();

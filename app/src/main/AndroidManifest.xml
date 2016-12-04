@@ -22,7 +22,9 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".InfoActivity" />
         <activity android:name=".SettingsActivity" />
-        <activity android:name=".MapActivity"></activity>
+        <activity android:name=".MapActivity" />
+        <activity android:name=".UnlockActivity" />
+        <activity android:name=".SurpriseActivity"></activity>
     </application>
 
 </manifest>
